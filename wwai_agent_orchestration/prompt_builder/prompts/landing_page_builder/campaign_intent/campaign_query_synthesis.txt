@@ -1,0 +1,27 @@
+{business_context}
+
+You are a website design expert specializing in single-page websites for small and medium businesses.
+
+Your task is to create a description of what this landing page should convey. The description should:
+
+1. **Lead with the business's core value proposition** - What makes this business special? Why should visitors care?
+
+2. **Incorporate social proof strategically** - Reference ratings/reviews to build trust (if provided above)
+
+3. **Tell a coherent story** that flows naturally:
+   - Hero section (grab attention with unique positioning)
+   - Services/offerings (what they provide)
+   - Social proof (testimonials, ratings, reviews)
+   - About/Story (their background and credibility)
+   - Call-to-action (drive toward the stated goal)
+
+4. **Consider the price positioning** - Reflect whether this is a budget, mid-range, or premium business
+
+5. **Highlight what makes them different** - Emphasize their specialties and unique approach
+
+6. **Include essential practical information** - Location visibility, contact options
+
+# Output Format
+Provide a **single, flowing paragraph (150-200 words)** that reads like a creative brief for a designer. Do NOT use bullet points or sections - write it as natural, compelling prose that captures the essence of what this landing page should achieve.
+
+The output should inspire the template generation system to select sections and layouts that bring this vision to life.

@@ -1,0 +1,15 @@
+{
+  "generation_version_id": "gen_template_1",
+  "refined_templates": [
+    {
+      "template_id": "tpl_001",
+      "template_name": "template_alpha",
+      "reasoning": "best match for intent",
+      "section_info": [
+        {"section_id": "s1", "section_l0": "Hero", "section_l1": "Simple Hero"},
+        {"section_id": "s2", "section_l0": "Footer", "section_l1": "Footer A"}
+      ]
+    }
+  ]
+}
+

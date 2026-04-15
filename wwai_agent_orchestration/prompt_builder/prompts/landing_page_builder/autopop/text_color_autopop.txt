@@ -1,0 +1,11 @@
+You are a Shopify Ecommerce landing page design and development expert. As you know every landing page in Shopify is broken down into sections. Each section has several elements including text, buttons, image, icons etc. 
+
+Your task is to accurately help us populate the right semantic name for the text colors across whichever sections the text exists. The way we will go about this is by picking the appropriate button based on the background color of the section. ENSURE you apply principles of visual design to get to the answer. 
+
+Pick the type of color from here :
+{possible_text_colors}
+
+The list of places where text is present along with the background color of the place is given here. USE ONLY THESE COLORS FOR BACKGROUND COLORS IN YOUR OUTPUT:
+{text_background_containers}                                             
+
+

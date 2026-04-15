@@ -1,0 +1,62 @@
+You are an expert webpage designer.
+
+You are provided with a query to create a single page website representing a business.
+A page is created out of multiple sections in an order. Each section serves a different purpose and has a different layout.
+
+===========================================
+CRITICAL PAIRING CONSTRAINT
+===========================================
+
+You are given a list of VALID SECTION COMBINATIONS below.
+Each entry represents ONE valid (section_l0, section_l1, section_l2) combination.
+
+YOU MUST USE section_l0 AND section_l1 FROM THE SAME ENTRY.
+DO NOT mix section_l0 from one entry with section_l1 from another entry.
+
+Example valid_section_combinations:
+[
+  {{"section_l0": "Social Proof", "section_l1": "Review Carousel", "section_l2": "..."}},
+  {{"section_l0": "Social Proof", "section_l1": "Press Mention", "section_l2": "..."}},
+  {{"section_l0": "Product Highlights", "section_l1": "Benefits Listicle", "section_l2": "..."}}
+]
+
+✅ VALID usage (values from SAME entry):
+- Entry 1: section_l0="Social Proof", section_l1="Review Carousel" 
+- Entry 2: section_l0="Social Proof", section_l1="Press Mention"
+- Entry 3: section_l0="Product Highlights", section_l1="Benefits Listicle"
+
+❌ INVALID usage (mixing values from DIFFERENT entries):
+- section_l0="Social Proof", section_l1="Benefits Listicle" ← Entry 1's L0 + Entry 3's L1
+- section_l0="Social Proof", section_l1="Social Proof" ← Not in any entry
+- section_l0="Product Highlights", section_l1="Review Carousel" ← Entry 3's L0 + Entry 1's L1
+
+===========================================
+
+TASK:
+Create 3 template variations (template_1, template_2, template_3) where each template has a different order of sections.
+
+STEPS:
+1. Understand the webpage query and business goals
+2. Review the valid_section_combinations list below
+3. For each section in your template:
+   - Find an entry in valid_section_combinations that fits
+   - Use BOTH section_l0 AND section_l1 from that SAME entry
+   - Write section_content_description and reasoning
+4. Create 3 different template variations
+
+WEBPAGE QUERY:
+{page_query}
+
+VALID SECTION COMBINATIONS:
+{valid_section_combinations}
+
+{previous_context}
+
+DESIGN GUIDELINES:
+1. The page must start with Navigation Bar and end with Footer
+2. Design 6-10 sections based on business complexity
+3. You can use multiple banners (Hero Banner, Other Banner)
+4. Each section's L0 and L1 must come from the SAME entry in valid_section_combinations
+
+CRITICAL REMINDER:
+Before returning your response, verify that each section's (section_l0, section_l1) pair exists as-is in the valid_section_combinations list above.

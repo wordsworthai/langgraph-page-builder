@@ -1,0 +1,98 @@
+[tool.poetry]
+name = "wwai-agent-orchestration"
+version = "0.1.0"
+description = "WWAI Agent Orchestration Framework"
+authors = ["Wordsworth AI <team@wordsworth.ai>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/wordsworthai/wwai-agent-orchestration"
+homepage = "https://github.com/wordsworthai/wwai-agent-orchestration"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+packages = [
+    { include = "wwai_agent_orchestration" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core LangChain & LangGraph
+langchain = ">=0.3.27"
+langchain-core = ">=0.3.75"
+langchain-openai = ">=0.3.14"
+langchain-anthropic = ">=0.3.10"
+langchain-google-genai = ">=2.1.3"
+langchain-text-splitters = ">=0.3.8"
+langgraph = ">=0.6.6"
+langgraph-checkpoint = ">=2.1.1"
+langgraph-checkpoint-mongodb = ">=0.3.0"
+
+# LLM Providers
+openai = ">=1.30.0"
+anthropic = ">=0.49.0"
+
+# Data Validation & Configuration
+pydantic = ">=2.5.0"
+pydantic-settings = ">=2.0.0"
+python-dotenv = ">=1.1.0"
+
+# Database
+pymongo = ">=4.7.0"
+motor = ">=3.4.0"
+redis = ">=5.0.0"
+
+# Google Cloud
+google-cloud-secret-manager = ">=2.16.1"
+google-cloud-storage = ">=2.19.0"
+google-genai = ">=1.16.1"
+
+# HTTP & API
+requests = ">=2.32.0"
+httpx = ">=0.28.1"
+aiohttp = ">=3.9.0"
+fastapi = ">=0.100.0"
+
+# Utilities
+python-dateutil = ">=2.9.0"
+typing-extensions = ">=4.12.2"
+
+# Image Processing
+pillow = ">=10.2.0"
+opencv-python = ">=4.11.0"
+
+# Data Processing
+numpy = ">=1.26.0"
+pandas = ">=2.0.0"
+
+# Other utilities
+boto3 = ">=1.35.0"
+htmlmin = ">=0.1.12"
+jsmin = ">=3.0.0"
+tinycss2 = ">=1.4.0"
+scrapingbee = ">=2.0.2"
+protobuf = ">=4.25.0"
+beautifulsoup4 = ">=4.13.4"
+playwright = ">=1.48.0"
+
+# WWAI packages (being open-sourced separately — see their respective repos)
+template-json-builder = { git = "https://github.com/wordsworthai/template_json_builder.git", rev = "main"}
+wwai-bundle-pipeline = { git = "https://github.com/wordsworthai/wwai-bundle-pipeline.git", rev = "main" }
+msgpack = "^1.1.2"
+uvicorn = "^0.40.0"
+absl-py = "^2.3.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.1.0"
+jupyter = "^1.1.1"
+nest-asyncio = "^1.6.0"
+pytest = "^9.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

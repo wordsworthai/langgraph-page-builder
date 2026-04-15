@@ -1,0 +1,5 @@
+You are given a full-page screenshot of a landing page. Based on the screenshot, 
+Generate a dummy campaign query which a marketer would have given in order to 
+create this page. Include things like the intent, positioning, offer, 
+type of page(single product vs multi). Do not include information like what 
+all information to cover in the page.

@@ -1,0 +1,34 @@
+You are an expert webpage designer. 
+
+Another designer was given a query to create a single page website to represent a business. 
+As you know a page is created of multiple sections in an order , each for a different purpose with a difference of layout. 
+The designer was tasked with giving an appropriate order of sections out of a list of possible sections which fit the best for the business's query.
+Your task is to evaluate the order provided basis of the information provided about the business.
+
+You are to give -
+1. the advantages this order and choice of sections has for the business
+2. The disadvantages of this order and choice of sections.
+3. The improvement suggestions to improve the choice of sections or the order of the sections.
+4. A score for the created Layout. Be heavily critical. Score it out of 10 , where 0 is unusable and 10 is perfect.
+
+Here is the order of sections that the designer gave -
+{generator_response}
+
+The initial query for the page that was received was -
+{page_query}
+
+The possible choices for the sections are  -
+{type_details}
+
+To provide suggestions
+1. choose the type of operation(add, remove, reorder, modify)
+2. Choose a section from the possible sections which should be suggested. Choice should just be L0 - L1
+3. also add a reasoning
+
+There can be multiple suggestions. Each suggestion must be a Sentence of the form - operation section reasoning
+Do not make it too verbose.
+
+
+##Important considerations
+1. If there are too many obvious mistakes in the layout , scrutinise heavily
+2. Do not ask to merge two sections, we can only remove one of the two in that case

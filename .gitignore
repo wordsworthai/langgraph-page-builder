@@ -1,0 +1,190 @@
+CLAUDE.md
+sample_data/*
+bundle_pipeline/bundle_pipeline_results/*
+verification_results/
+# IDE
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+.DS_Store
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env/
+env.bak/
+bin/
+include/
+venv/Scripts/
+.venv/Scripts/
+ENV/Scripts/
+env/Scripts/
+pyvenv.cfg
+pip-selfcheck.json
+
+# Spyder project settings
+.spyderproject
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+node_modules/
+
+data/*
+
+output/
+html_viewer/examples/*
+liquid_compiler/node_modules/*
+
+# Additional folders
+font_previews/*
+local_font_files/*
+OneDrive_1_9-27-2024 (3)/*
+network_font_files/*
+PROXIMA_NOVA/*
+bigmoore/*
+css_font_files/*
+
+# Additional files
+random.ipynb
+font_preview.html
+
+datashopify_graphql/*
+api_data_debug/*
+.DS_Store
+
+
+local_writer_folder/*
+
+autopopulation/*.json
+# Exclude debug output directory and all its contents
+autopopulation/debug_output/
+autopopulation/debug_output/*
+autopopulation/debug_output/**/*
+# Exclude root debug output directory
+debug_output/
+debug_output/*
+debug_output/**/*
+# Exclude autopopulation data providers debug folder
+autopopulation/data_providers/debug/
+autopopulation/data_providers/debug/*
+autopopulation/data_providers/debug/**/*
+
+autopopulation/autopopulation_dummy/
+autopopulation/autopopulation_dummy/*
+autopopulation/autopopulation_dummy/**/*
+
+.langgraph_api/*
+venv311/*
+pipeline/eval_ui/.vite/*
+# Vite cache and pre-bundled deps
+eval_server/**/.vite/
+.vite/
+
+# Eval debug state dumps (EVAL_DUMP_STATE_DIR)
+evals_debug_dumps/
+
+# Internal docs (open-source prep artifacts, never published)
+docs/internal/

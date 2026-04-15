@@ -1,0 +1,4 @@
+# Vite cache and pre-bundled dependencies
+*/.vite/
+.vite/
+**/.vite/

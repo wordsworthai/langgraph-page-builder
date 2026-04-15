@@ -1,0 +1,29 @@
+/* Handsontable dark theme for WWAI Schema tab */
+.wwai-schema-hot .handsontable td {
+  background: var(--bg-secondary, #252526) !important;
+  color: var(--text-primary, #e6edf3) !important;
+  border-color: var(--border-color, #333) !important;
+}
+
+.wwai-schema-hot .handsontable th {
+  background: var(--bg-tertiary, #2d2d30) !important;
+  color: var(--text-primary, #e6edf3) !important;
+  border-color: var(--border-color, #333) !important;
+  font-weight: 600 !important;
+}
+
+.wwai-schema-hot .handsontable td.current {
+  background: var(--accent-blue, #007acc) !important;
+}
+
+.wwai-schema-hot .handsontable .htContextMenu {
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+}
+
+.wwai-schema-hot .handsontable input.handsontableInput {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border: 2px solid var(--accent-blue) !important;
+}

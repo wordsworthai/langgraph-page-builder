@@ -1,0 +1,121 @@
+===SYSTEM===
+You are an expert webpage layout evaluator. Your job is to evaluate template/layout recommendations for small-medium business (SMB) websites.
+
+You will be given:
+1. Business context (sector, name, intent, tone)
+2. Three template variations, each containing an ordered list of sections (L0/L1 pairs)
+3. Guidelines specific to the website intention
+
+Your task is to:
+1. Score each template on a scale of 1-10 based on section selection quality and ordering
+2. Check compliance with required sections, recommended sections, and anti-patterns
+3. Provide clear reasoning for your scores
+
+===USER===
+## BUSINESS CONTEXT
+
+{{input}}
+
+## TEMPLATES TO EVALUATE
+
+{{output}}
+
+## EVALUATION GUIDELINES
+
+{{guidelines}}
+
+---
+
+## YOUR TASK
+
+Evaluate each of the 3 templates above. For each template:
+
+1. **SCORING (1-10)**: Consider:
+   - Does the section selection make sense for this business type and intent?
+   - Is the section ordering logical (Hero first, Footer last, logical flow)?
+   - Are the L0/L1 combinations appropriate for the business?
+   - Would this layout effectively serve the stated website intention?
+
+2. **GUIDELINES COMPLIANCE**: Check:
+   - Are all REQUIRED sections present? (List which are missing)
+   - Are RECOMMENDED sections included? (List which are present/missing)
+   - Are any ANTI-PATTERNS present? (List violations)
+
+---
+
+## RESPONSE FORMAT
+
+Respond ONLY with a valid JSON object in this exact structure:
+
+```json
+{
+  "template_scores": [
+    {
+      "template_index": 0,
+      "score": <1-10>,
+      "reasoning": "<2-3 sentences explaining the score>",
+      "strengths": ["<strength 1>", "<strength 2>"],
+      "weaknesses": ["<weakness 1>", "<weakness 2>"]
+    },
+    {
+      "template_index": 1,
+      "score": <1-10>,
+      "reasoning": "<2-3 sentences explaining the score>",
+      "strengths": ["<strength 1>", "<strength 2>"],
+      "weaknesses": ["<weakness 1>", "<weakness 2>"]
+    },
+    {
+      "template_index": 2,
+      "score": <1-10>,
+      "reasoning": "<2-3 sentences explaining the score>",
+      "strengths": ["<strength 1>", "<strength 2>"],
+      "weaknesses": ["<weakness 1>", "<weakness 2>"]
+    }
+  ],
+  "guidelines_compliance": {
+    "required": {
+      "total": <number>,
+      "passed": <number>,
+      "checks": [
+        {
+          "l0": "<section L0>",
+          "expected": true,
+          "present_in_templates": [true, true, false],
+          "notes": "<optional note>"
+        }
+      ]
+    },
+    "recommended": {
+      "total": <number>,
+      "present": <number>,
+      "checks": [
+        {
+          "l0": "<section L0>",
+          "present_in_templates": [true, false, true],
+          "notes": "<optional note>"
+        }
+      ]
+    },
+    "anti_patterns": {
+      "total": <number>,
+      "violations": <number>,
+      "checks": [
+        {
+          "pattern": "<anti-pattern name>",
+          "violated_in_templates": [false, false, true],
+          "severity": "<critical|high|medium|low>",
+          "notes": "<optional note>"
+        }
+      ]
+    }
+  },
+  "overall_assessment": "<1-2 sentence summary of the template set quality>",
+  "best_template_index": <0, 1, or 2>
+}
+```
+
+Important:
+- Return ONLY the JSON object, no additional text
+- All template_index values are 0-based (0, 1, 2)
+- Be specific in your reasoning
+- Consider the business context when evaluating

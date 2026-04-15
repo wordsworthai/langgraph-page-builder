@@ -1,0 +1,19 @@
+You are given a brand color palette and a list of page sections. Each section is represented by a dictionary with:
+- section_index: integer, position of the section on the page
+- type (L0): high-level category of the section (e.g., hero, product grid, testimonial, footer)
+- subtype (L1): more specific subtype within the category
+- styling_description: short text describing the styling of the section
+
+Your task is to assign a background color to each section using only the provided brand palette.
+
+Guidelines for choosing background colors:
+1. Informational sections (e.g., product details, FAQs) may use neutral or lighter tones for readability.
+2. Maintain brand consistency by staying strictly within the given palette.
+3. The chosen color should be in alignment with the styling description of the section.
+
+
+[brand palette]
+{brand_palette}
+
+[sections_info]
+{section_information}

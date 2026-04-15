@@ -1,0 +1,9 @@
+Analyze this webpage and extract content useful for landing page campaign intent:
+
+1. **Page Intent**: What is the primary purpose of this page? (e.g., product sale, lead generation, brand awareness, information, booking/scheduling)
+
+2. **Business Description**: A concise 2-3 sentence description of what this business does, who they serve, and their main value proposition.
+
+3. **Campaign-Relevant Content**: Key messaging, offers, value propositions, or calls-to-action that would inform a landing page design.
+
+Respond in a clear, structured format that can be used as campaign context for template generation. Focus on the semantic meaning and intent, not visual layout.

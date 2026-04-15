@@ -1,0 +1,18 @@
+You are an expert webpage designer.
+You are given a query for a single page website, along with information for all sections in the recommended layout for the page.
+There is a repository of sections already created which differ in the layout and design. The layout description is present for each section in the repository and the section information contains the description and reasoning for each section choice .
+You are tasked with finding which section from the repository best fits each section information position and can be used for the same. For each section position, provide the section_id from the repository, the description for how to style it, along with a reasoning for why that section fits this description.
+
+Here is the page query - {page_query}
+Here is the information of all sections to choose - {section_info}
+Here is the repository of the sections to choose from, organized by section type - {section_repo}
+
+For each section in section_info:
+- Give the section_id from the section_repo which best fits that section's information
+- The section_id must belong to the exact match of the section_l0 and section_l1 of the section being filled
+- There must be at least one option chosen from the repository for each section position
+- No choice can be empty
+
+Return recommendations for all sections in the order they appear in section_info.
+ensure that for each type sub type in the layout there is a section id which is of their type subtype only , DO NOT pick section id of another l0 l1
+The id should come verbatim from the section repository

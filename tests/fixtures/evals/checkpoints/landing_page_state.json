@@ -1,0 +1,19 @@
+{
+  "generation_version_id": "gen_landing_1",
+  "refined_templates": [
+    {
+      "template_id": "tpl_landing_1",
+      "section_info": [
+        {"section_id": "hero_1", "section_l0": "Hero", "section_l1": "Hero A"},
+        {"section_id": "footer_1", "section_l0": "Footer", "section_l1": "Footer A"}
+      ]
+    }
+  ],
+  "post_process": {
+    "html_compilation_results": {
+      "compiled_html_s3_url": "https://example.com/html/landing.html",
+      "compiled_html_path": "/tmp/landing.html"
+    }
+  }
+}
+
