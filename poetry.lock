@@ -2854,7 +2854,7 @@ optional = false
 python-versions = ">=3.12,<4.0"
 groups = ["main"]
 files = []
-develop = true
+develop = false
 
 [package.dependencies]
 absl-py = "^2.4.0"
@@ -2881,8 +2881,10 @@ shopifyapi = "^12.7.0"
 tinycss2 = "1.4.0"
 
 [package.source]
-type = "directory"
-url = "../liquid-bundle-pipeline"
+type = "git"
+url = "https://github.com/wordsworthai/liquid-bundle-pipeline.git"
+reference = "main"
+resolved_reference = "36f519096986c485fa3fa1da132fd4a39765413c"
 
 [[package]]
 name = "markupsafe"
@@ -5786,7 +5788,7 @@ optional = false
 python-versions = "^3.11"
 groups = ["main"]
 files = []
-develop = true
+develop = false
 
 [package.dependencies]
 beautifulsoup4 = ">=4.12.0"
@@ -5800,8 +5802,10 @@ requests = ">=2.31.0"
 selenium = ">=4.15.0"
 
 [package.source]
-type = "directory"
-url = "../shopify-template-autopopulator"
+type = "git"
+url = "https://github.com/wordsworthai/shopify-template-autopopulator.git"
+reference = "main"
+resolved_reference = "4a60cfcc97d580c94ce9ee53ae78b1081bc433b2"
 
 [[package]]
 name = "shopifyapi"
@@ -6921,4 +6925,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4.0"
-content-hash = "3daf966072319a7d511776de59914de8995ee514af37c9986f9c24dbbc9ce4fe"
+content-hash = "9b5cf7df79f169b5c88b2bba8cd3f7d733d25ecf2ed86684feed3a6be66dba2d"

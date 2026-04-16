@@ -78,9 +78,9 @@ protobuf = ">=4.25.0"
 beautifulsoup4 = ">=4.13.4"
 playwright = ">=1.48.0"
 
-# Local sibling packages (update to real GitHub URLs after publishing)
-shopify-template-autopopulator = {path = "../shopify-template-autopopulator", develop = true}
-liquid-bundle-pipeline = {path = "../liquid-bundle-pipeline", develop = true}
+# Sibling packages
+shopify-template-autopopulator = {git = "https://github.com/wordsworthai/shopify-template-autopopulator.git", rev = "main"}
+liquid-bundle-pipeline = {git = "https://github.com/wordsworthai/liquid-bundle-pipeline.git", rev = "main"}
 msgpack = "^1.1.2"
 uvicorn = "^0.40.0"
 absl-py = "^2.3.1"
