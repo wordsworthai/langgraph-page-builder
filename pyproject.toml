@@ -1,14 +1,12 @@
 [tool.poetry]
-name = "wwai-agent-orchestration"
+name = "langgraph-page-builder"
 version = "0.1.0"
-description = "WWAI Agent Orchestration Framework"
-authors = ["Wordsworth AI <team@wordsworth.ai>"]
+description = "LangGraph-based AI agent orchestration for building Shopify landing pages"
+authors = ["Wordsworth AI"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/wordsworthai/wwai-agent-orchestration"
-homepage = "https://github.com/wordsworthai/wwai-agent-orchestration"
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 7 - Inactive",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3.11",
@@ -80,9 +78,9 @@ protobuf = ">=4.25.0"
 beautifulsoup4 = ">=4.13.4"
 playwright = ">=1.48.0"
 
-# WWAI packages (being open-sourced separately — see their respective repos)
-template-json-builder = { git = "https://github.com/wordsworthai/template_json_builder.git", rev = "main"}
-wwai-bundle-pipeline = { git = "https://github.com/wordsworthai/wwai-bundle-pipeline.git", rev = "main" }
+# Local sibling packages (update to real GitHub URLs after publishing)
+shopify-template-autopopulator = {path = "../shopify-template-autopopulator", develop = true}
+liquid-bundle-pipeline = {path = "../liquid-bundle-pipeline", develop = true}
 msgpack = "^1.1.2"
 uvicorn = "^0.40.0"
 absl-py = "^2.3.1"
@@ -92,6 +90,7 @@ ipykernel = "^7.1.0"
 jupyter = "^1.1.1"
 nest-asyncio = "^1.6.0"
 pytest = "^9.0.2"
+pip-licenses = "^5.5.5"
 
 [build-system]
 requires = ["poetry-core"]
