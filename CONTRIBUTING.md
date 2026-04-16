@@ -1,60 +1,15 @@
 # Contributing
 
-Thank you for your interest in contributing to wwai-agent-orchestration.
+## Status
 
-## Development Setup
+This repository is published **as-is**. No active development or maintenance is planned.
 
-**Prerequisites:**
-- Python 3.11+
-- [Poetry](https://python-poetry.org/docs/#installation)
-- MongoDB (local or remote)
-- Redis (local or remote)
+If you find it useful, you are welcome to fork it and adapt it for your own needs under the terms of the [MIT License](./LICENSE).
 
-**Install dependencies:**
-```bash
-poetry install
-```
+## Bug Reports
 
-**Configure environment:**
-```bash
-cp .env.example .env
-# Fill in your API keys and service URLs
-```
+If you encounter a bug, you may open a GitHub Issue to document it for others who may hit the same problem. We cannot guarantee a response or fix.
 
-**Note:** The `template-json-builder` and `wwai-bundle-pipeline` dependencies are being open-sourced separately. Until those repos are public, a full end-to-end run requires access to the Wordsworth AI GitHub org.
+## Security Issues
 
-## Running Tests
-
-```bash
-# Run all tests
-poetry run pytest
-
-# Run a specific file
-poetry run pytest tests/nodes/landing_page_builder/test_some_node.py
-
-# Run by pattern
-poetry run pytest -k "test_name_pattern"
-```
-
-## Running Demos
-
-```bash
-poetry run python pipeline/landing_page_demos/landing_page_demo.py
-```
-
-See `pipeline/landing_page_demos/README.md` for all available demos.
-
-## Pull Requests
-
-1. Fork the repo and create a branch from `main`.
-2. Make your changes with clear, focused commits.
-3. Ensure all tests pass before submitting.
-4. Open a PR with a clear description of what changed and why.
-
-## Reporting Issues
-
-Open a GitHub issue with a minimal reproduction case and relevant environment details (OS, Python version, error traceback).
-
-## Code Style
-
-No formatter is enforced. Follow the patterns already present in the file you're editing.
+Please do **not** open public issues for security-sensitive reports. See [SECURITY.md](./SECURITY.md) for the responsible disclosure process.
