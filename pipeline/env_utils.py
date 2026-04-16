@@ -13,8 +13,8 @@ def check_env_vars():
         "GEMINI_API_KEY": os.getenv("GEMINI_API_KEY"),
         "RAPIDAPI_KEY": os.getenv("RAPIDAPI_KEY"),
         "RAPIDAPI_HOST": os.getenv("RAPIDAPI_HOST"),
-        "ACCESS_KEY_ID": os.getenv("ACCESS_KEY_ID"),
-        "SECRET_ACCESS_KEY": os.getenv("SECRET_ACCESS_KEY"),
+        "AWS_ACCESS_KEY_ID": os.getenv("AWS_ACCESS_KEY_ID"),
+        "AWS_SECRET_ACCESS_KEY": os.getenv("AWS_SECRET_ACCESS_KEY"),
     }
     # Failed to get S3 client: AWS credentials not found in environment variables
     

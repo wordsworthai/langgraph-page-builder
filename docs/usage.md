@@ -51,8 +51,8 @@ Copy `.env.example` to `.env` and fill in the values you need. See `.env.example
 
 | Variable | Purpose |
 |----------|---------|
-| `ACCESS_KEY_ID` | AWS access key |
-| `SECRET_ACCESS_KEY` | AWS secret key |
+| `AWS_ACCESS_KEY_ID` | AWS access key |
+| `AWS_SECRET_ACCESS_KEY` | AWS secret key |
 | `S3_BUCKET_NAME` | S3 bucket for compiled HTML uploads |
 | `S3_BUCKET_REGION` | AWS region for the bucket |
 

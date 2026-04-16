@@ -85,7 +85,7 @@ async def main_async():
     
     # Create execution config
     exec_config = create_default_execution_config(
-        use_mock_autopopulation=True
+        use_mock_autopopulation=False
     )
     
     # Create workflow input (nested context, same shape as UserInput)
