@@ -148,6 +148,11 @@ def _patch_autopopulation_snapshots(
         full_mapping_for_snap = [
             (entry[0], idx) for idx, entry in enumerate(source_mapping)
         ]
+        # Pad if snapshot has fewer sections than generation_template_sections
+        # (can happen when a prior insert-section didn't propagate to this collection)
+        while len(full_mapping_for_snap) <= replace_index:
+            pad_idx = len(full_mapping_for_snap)
+            full_mapping_for_snap.append(("__pad__", pad_idx))
         full_mapping_for_snap[replace_index] = (new_unique_id, replace_index)
     else:
         full_mapping_for_snap = []
@@ -214,6 +219,12 @@ def _patch_generated_templates_with_values(
     sections_dict[new_unique_id] = new_section_data
 
     if mode == "replace":
+        # Pad if compiled template has fewer sections than generation_template_sections
+        # (can happen when a prior insert-section didn't propagate to this collection)
+        while len(enabled) <= target_index:
+            enabled.append("__pad__")
+        while len(section_id_list) <= target_index:
+            section_id_list.append("")
         enabled[target_index] = new_unique_id
         section_id_list[target_index] = section_id
     else:
